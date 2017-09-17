@@ -16,18 +16,35 @@ var buddies = [
   'Boromir'
 ];
 
+
+
 var lands = ['The Shire', 'Rivendell', 'Mordor'];
 var body = document.querySelector('body');
 
 
 // Part 1
-
-
-function makeMiddleEarth() {
   // create a section tag with an id of middle-earth
+  //first define id middle earth //
   // inside, add each land as an article tag
   // inside each article tag include an h1 with the name of the land
   // append middle-earth to your document body
+  
+  function makeMiddleEarth() {
+
+      document.createElement('section').setAttribute('id', 'middleEarth');
+      var middleEarth = document.getElementById("middleEarth");
+
+    for (var i = 0; i <= lands.length; i++) {
+        var newArticle = document.createElement("article")[i];
+       //middleEarth.appendChild(newArticle);
+        var newH1 = document.createElement('h1')[i];
+        //document.querySelector(newArticle).appendChild(h1);
+
+      }
+       
+
+      //run through all three lands unil i = 3 then stop and move on this will name all the lands
+
 }
 
 makeMiddleEarth();
