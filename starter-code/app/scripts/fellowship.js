@@ -29,7 +29,7 @@ var body = document.querySelector('body');
   // inside each article tag include an h1 with the name of the land
   // append middle-earth to your document body
   
-  function makeMiddleEarth() {
+function makeMiddleEarth() {
 
     var middleEarth = document.createElement('section');
 
@@ -39,13 +39,13 @@ var body = document.querySelector('body');
     console.log(document.getElementById('middleEarth'));
 
     for (var i = 0; i < lands.length; i++) {
-
       var addLand = document.createElement('article');
       var addNewTag = document.createElement('h1');
       addLand.appendChild(addNewTag);
       middleEarth.appendChild(addLand);
       addNewTag.textContent = lands[i];
     }
+
 }
 
 makeMiddleEarth();
@@ -53,10 +53,40 @@ makeMiddleEarth();
 
 // Part 2
 
+
+
 function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
   // give each hobbit a class of hobbit
+  // 1. create for loop running through all hobbits name
+  // 2. create unordered list of hobits
+  // 3. add a ul to the shire article tag1
+  // 4. assign a hobbit class to each hobbit
+  // 5. append hobbits to document body
+    var hobbitList = document.createElement('ul');
+
+    for (var i = 0; i < hobbits.length; i++) {// this will loop through the hobbits
+      
+      console.log(i);
+
+      var hobbit = document.createElement('li'); //add each hobbit to a ul
+
+      hobbit.setAttribute('class', 'hobbit');
+
+      hobbitList.appendChild(hobbit);
+
+      hobbit.textContent = hobbits[i];
+
+  }
+
+    var theShire = document.getElementsByTagName('article')[0]; //get the article tag 1
+      
+    theShire.appendChild(hobbitList);//append hobbits to the shire
+
 }
+
+makeHobbits();
+
 
 
 // Part 3
