@@ -31,20 +31,21 @@ var body = document.querySelector('body');
   
   function makeMiddleEarth() {
 
-      document.createElement('section').setAttribute('id', 'middleEarth');
-      var middleEarth = document.getElementById("middleEarth");
+    var middleEarth = document.createElement('section');
 
-    for (var i = 0; i <= lands.length; i++) {
-        var newArticle = document.createElement("article")[i];
-       //middleEarth.appendChild(newArticle);
-        var newH1 = document.createElement('h1')[i];
-        //document.querySelector(newArticle).appendChild(h1);
+    middleEarth.setAttribute('id', 'middleEarth');
+    
+    body.appendChild(middleEarth);
+    console.log(document.getElementById('middleEarth'));
 
-      }
-       
+    for (var i = 0; i < lands.length; i++) {
 
-      //run through all three lands unil i = 3 then stop and move on this will name all the lands
-
+      var addLand = document.createElement('article');
+      var addNewTag = document.createElement('h1');
+      addLand.appendChild(addNewTag);
+      middleEarth.appendChild(addLand);
+      addNewTag.textContent = lands[i];
+    }
 }
 
 makeMiddleEarth();
