@@ -126,6 +126,11 @@ function beautifulStranger() {
   //strider is 3 in buddies li
   //cahnge the name to Aragon
 
+  document.getElementsByTagName()[3];
+  .innerHTML = "";
+
+
+
 }
 
 
