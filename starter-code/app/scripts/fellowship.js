@@ -72,26 +72,24 @@ function keepItSecretKeepItSafe() {
   // create a div with an id of 'the-ring'
   // give the div a class of 'magic-imbued-jewelry'
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
+  
   // add click event listener on the id theRing
   // add the nazal screech function to the ring id event listener
   //create frodo
   //create a div with an id of frodo
   // add the ring as a child of Frodo
-
    var theRing = document.createElement('div');
-    theRing.setAttribute('id', 'theRing');
+    theRing.setAttribute('id', 'the-ring');
     theRing.setAttribute('class', 'magic-imbued-jewelry');
     body.appendChild(theRing);
     console.log(theRing);
-    
-    document.getElementById('theRing').addEventListener('click', function nazgulScreech(){          
+
+    document.getElementById('the-ring').addEventListener('click', function nazgulScreech(){          
       document.getElementById("nazgul-screech").play();
     });
 
-    var frodo = document.createElement('div');
-      frodo.setAttribute('id', 'frodo');
-      frodo.appendChild(theRing);
-      console.log(frodo);
+    var frodo = document.getElementsByTagName('li')[0];
+    frodo.appendChild(theRing);
 }
 
 keepItSecretKeepItSafe();
@@ -102,6 +100,8 @@ function makeBuddies() {
   // create an aside tag
   // attach an unordered list of the 'buddies' in the aside
   // insert your aside as a child element of rivendell
+
+
 }
 
 
