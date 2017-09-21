@@ -101,8 +101,21 @@ function makeBuddies() {
   // attach an unordered list of the 'buddies' in the aside
   // insert your aside as a child element of rivendell
 
+  var buddyTag = document.createElement('aside');//create aside tag
+  body.appendChild(buddyTag);//append aside tag to body
 
+  var addBuds = document.createElement('ul');  //create an unorderlist to add in buddies
+
+    for (var i = 0; i < buddies.length; i++) {// this will loop through the buddies
+      var buddyLi = document.createElement('li'); //add each buddy to an li
+      buddyTag.appendChild(buddyLi);
+      buddyLi.textContent = buddies[i];
+  }
+    var Rivendell = document.getElementsByTagName('article')[1]; //get the article tag 1   
+    Rivendell.appendChild(buddyTag);//append hobbits to the shire
 }
+
+makeBuddies();
 
 
 // Part 5
@@ -110,6 +123,9 @@ function makeBuddies() {
 
 function beautifulStranger() {
   // change the 'Strider' textnode to 'Aragorn'
+  //strider is 3 in buddies li
+  //cahnge the name to Aragon
+
 }
 
 
