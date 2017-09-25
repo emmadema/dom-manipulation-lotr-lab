@@ -126,20 +126,28 @@ function beautifulStranger() {
   //strider is 3 in buddies li
   //cahnge the name to Aragon
 
-  document.getElementsByTagName()[3];
-  .innerHTML = "";
-
+  //get li 3 in buddies 
+  var strider = document.getElementsByTagName('li')[7];
+  strider.textContent = 'Aragon';
+  //console.log(strider);
 
 
 }
 
+beautifulStranger();
 
 // Part 6
 
 function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
+  // move hobbits from the shire and send them to Rivendale
+  //hobbits are under hobbitList
+  //var Rivendell = document.getElementsByTagName('article')[1];
+  //Rivendale.appendChild(hobbitList);
+  
 }
 
+leaveTheShire();
 
 // Part 7
 
