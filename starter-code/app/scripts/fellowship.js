@@ -142,8 +142,11 @@ function leaveTheShire() {
   // assemble the hobbits and move them to Rivendell
   // move hobbits from the shire and send them to Rivendale
   //hobbits are under hobbitList
-  //var Rivendell = document.getElementsByTagName('article')[1];
-  //Rivendale.appendChild(hobbitList);
+  var moveHobbits = document.getElementsByTagName('ul')[0];
+  console.log(moveHobbits);
+  var rivendell = document.getElementsByTagName('article')[1];
+  rivendell.appendChild(moveHobbits);
+
   
 }
 
